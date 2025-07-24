@@ -97,6 +97,14 @@
             color: #2c3e50;
         }
         
+        .section-title-white {
+            font-size: 2.2rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+        }
+        
         .problem-section {
             background: #f8f9fa;
         }
@@ -113,6 +121,97 @@
             border-left: 4px solid #7f8c8d;
             border-radius: 5px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* VSL SECTION */
+        .vsl-section {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+        
+        .vsl-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            background: #000;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        
+        .video-placeholder {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #95a5a6;
+            font-size: 1.2rem;
+        }
+        
+        /* AUTHOR SECTION */
+        .author-section {
+            background: #34495e;
+            color: white;
+            text-align: center;
+            padding: 40px 30px;
+        }
+        
+        .author-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .author-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #95a5a6;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            border: 4px solid white;
+        }
+        
+        .author-name {
+            font-size: 2rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+        
+        .author-title {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #bdc3c7;
+        }
+        
+        .author-social {
+            font-size: 1.1rem;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .author-social:hover {
+            color: #5dade2;
         }
         
         .solution-section {
@@ -251,6 +350,14 @@
             .method-steps {
                 grid-template-columns: 1fr;
             }
+            
+            .author-section {
+                padding: 30px 20px;
+            }
+            
+            .vsl-section {
+                padding: 30px 20px;
+            }
         }
     </style>
 </head>
@@ -265,11 +372,54 @@
                 MÉTODO L.I.D.E.R
             </h1>
             <p class="sub-headline">
-                Libera el 80% del potencial oculto de tu equipo en 30 días y haz que tu negocio funcione perfectamente sin ti
+                Libera hasta el 80% del potencial oculto de las personas que lideras en los primer 30 dias
+                sea que tengas equipo establecido, estés formando tu primer equipo, se te esté yendo gente valiosa, o sientas que todo depende de ti 
+                y haz que tu negocio funcione perfectamente sin ti
             </p>
             <a href="https://pay.hotmart.com/P100927883R" class="cta-button">
-                    ¡QUIERO EL MÉTODO AHORA!
+                ¡QUIERO EL MÉTODO AHORA!
             </a>
+        </section>
+
+        <!-- VSL SECTION -->
+        <section class="section vsl-section">
+            <div class="vsl-container">
+                <h2 class="section-title-white">Descubre Cómo Transformar Tu Liderazgo</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 20px; color: #bdc3c7;">
+                    Mira este video de 2 minutos y aprende exactamente por qué tu equipo no rinde al máximo
+                </p>
+                <div class="video-wrapper">
+                    <!-- Aquí va tu link de YouTube -->
+                    <iframe src="TU_LINK_DE_YOUTUBE_AQUI" 
+                            title="Método L.I.D.E.R - Video Explicativo" 
+                            allowfullscreen>
+                    </iframe>
+                    <!-- Placeholder mientras agregas el video -->
+                    <div class="video-placeholder">
+                        📹 Agrega aquí tu link de YouTube
+                    </div>
+                </div>
+                <p style="font-size: 1rem; color: #95a5a6;">
+                    ⚡ Video completo - Sin compromisos - Acceso inmediato
+                </p>
+            </div>
+        </section>
+
+        <!-- AUTHOR SECTION -->
+        <section class="author-section">
+            <div class="author-container">
+                <div class="author-image">
+                    👩‍💼
+                </div>
+                <h3 class="author-name">Nhora Angulo</h3>
+                <p class="author-title">Experta en Liderazgo y Riesgos Laborales</p>
+                <a href="https://instagram.com/angulo.sst" target="_blank" class="author-social">
+                    📱 @angulo.sst
+                </a>
+                <p style="margin-top: 20px; font-size: 1rem; color: #bdc3c7;">
+                    Más de 40 empresas transformadas | Especialista en prevención de riesgos organizacionales
+                </p>
+            </div>
         </section>
 
         <!-- PROBLEMA -->
@@ -357,13 +507,12 @@
 
         <!-- PRECIO -->
         <section class="section price-section" id="comprar">
-            <h2 class="section-title">Inversión Especial</h2>
+            <h2 class="section-title-white">Inversión Especial</h2>
             <div class="price-comparison">
                 <p style="font-size: 1.2rem; margin-bottom: 20px;">
                     Un consultor te cobraría 500 USD+ por esto
                 </p>
-                <div class="old-price">USD 57
-                </div>
+                <div class="old-price">USD 57</div>
                 <div class="new-price">USD 27</div>
                 <div class="discount-badge">50% DE DESCUENTO</div>
                 <p style="margin-top: 20px; font-size: 1.1rem;">
@@ -388,7 +537,6 @@
                     <li>✅ <strong>Ejercicios Prácticos Paso a Paso</strong></li>
                     <li>✅ <strong>Plan de implementacion en cada modulo</strong></li>
                     <li>✅ <strong>Acceso inmediato</strong></li>
-                  
                 </ul>
             </div>
 
@@ -403,7 +551,7 @@
                 
                 <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 10px; margin-bottom: 20px;">
                     <h4 style="font-size: 1.4rem; margin-bottom: 15px;">📊 BONO #1</h4>
-                    <p style="font-size: 1.2rem; font-weight: bold;"> plantilla de Señales Invisibles del Líder</p>
+                    <p style="font-size: 1.2rem; font-weight: bold;">Plantilla de Señales Invisibles del Líder</p>
                     <p style="font-size: 1rem; margin-top: 10px;">Guía para detectar las micro-señales que envías sin darte cuenta y que afectan a tu equipo</p>
                 </div>
 
@@ -428,7 +576,7 @@
         <!-- GARANTÍA -->
         <section class="section guarantee-section">
             <div class="guarantee-badge">7</div>
-            <h2 class="section-title">Garantía Total de 7 Días</h2>
+            <h2 class="section-title-white">Garantía Total de 7 Días</h2>
             <p style="font-size: 1.3rem; margin-bottom: 30px;">
                 Si aplicas TODO el método durante 7 días y no ves cambios reales en tu equipo, te devuelvo cada centavo. Sin preguntas.
             </p>
@@ -495,14 +643,14 @@
 
         <!-- URGENCIA -->
         <section class="section urgency-section">
-            <h2 class="section-title">⚠️ Advertencia Importante</h2>
+            <h2 class="section-title-white">⚠️ Advertencia Importante</h2>
             <div class="warning-box">
                 <p style="font-size: 1.2rem; margin-bottom: 20px;">
                     <strong>Cada día que esperas, tu equipo se vuelve más dependiente de ti.</strong>
                 </p>
                 <p style="font-size: 1.1rem; margin-bottom: 15px;">
                     Esta oferta de USD27 + bonos gratis termina el 31 de julio.<br>
-                    Después vuelve a su precio normal de USD57(sin bonos).
+                    Después vuelve a su precio normal de USD57 (sin bonos).
                 </p>
                 <p style="font-size: 1rem; background: rgba(255,255,255,0.2); padding: 15px; border-radius: 10px;">
                     📅 <strong>Quedan pocos días para obtener los bonos gratuitos</strong>
